@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/drtanvi/static/css/main.50a7050a.css",
-    "main.js": "/drtanvi/static/js/main.e4751947.js",
-    "static/js/787.3167efb2.chunk.js": "/drtanvi/static/js/787.3167efb2.chunk.js",
-    "static/media/diabetes.jpg": "/drtanvi/static/media/diabetes.8f363a10c6d5fb1742f1.jpg",
-    "static/media/dummyuser.jpg": "/drtanvi/static/media/dummyuser.2d546c1633af704874dd.jpg",
-    "static/media/drtanvi.svg": "/drtanvi/static/media/drtanvi.25bdbcc0fd8657c7c61a0ccc86f7c013.svg",
-    "static/media/drtanvilogo.png": "/drtanvi/static/media/drtanvilogo.b6150f5ba3f5a14f103d.png",
-    "static/media/thyroid.svg": "/drtanvi/static/media/thyroid.15611e231c48f6189fea24270d662580.svg",
-    "static/media/pcos.svg": "/drtanvi/static/media/pcos.43abdd81af0bf671d26b4f74fd9461ab.svg",
-    "static/media/diabetes.svg": "/drtanvi/static/media/diabetes.740c7815e7daecca2baf346937f83738.svg",
-    "index.html": "/drtanvi/index.html",
-    "static/media/more.svg": "/drtanvi/static/media/more.8d03d7d28cf34fa5287f36c2fe07631b.svg",
-    "static/media/logo.svg": "/drtanvi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/obesity.svg": "/drtanvi/static/media/obesity.164463817dd0fb90c3433508111e6886.svg",
-    "static/media/playbtn.svg": "/drtanvi/static/media/playbtn.1c2d345fe093bbcd8873c40d9181c786.svg",
-    "static/media/arrowright.svg": "/drtanvi/static/media/arrowright.32dad69341663cbdf610a73369ed48b8.svg",
-    "main.50a7050a.css.map": "/drtanvi/static/css/main.50a7050a.css.map",
-    "main.e4751947.js.map": "/drtanvi/static/js/main.e4751947.js.map",
-    "787.3167efb2.chunk.js.map": "/drtanvi/static/js/787.3167efb2.chunk.js.map"
+    "main.css": "/drtanvifrontend/static/css/main.50a7050a.css",
+    "main.js": "/drtanvifrontend/static/js/main.116707a8.js",
+    "static/js/787.3167efb2.chunk.js": "/drtanvifrontend/static/js/787.3167efb2.chunk.js",
+    "static/media/diabetes.jpg": "/drtanvifrontend/static/media/diabetes.8f363a10c6d5fb1742f1.jpg",
+    "static/media/dummyuser.jpg": "/drtanvifrontend/static/media/dummyuser.2d546c1633af704874dd.jpg",
+    "static/media/drtanvi.svg": "/drtanvifrontend/static/media/drtanvi.25bdbcc0fd8657c7c61a0ccc86f7c013.svg",
+    "static/media/drtanvilogo.png": "/drtanvifrontend/static/media/drtanvilogo.b6150f5ba3f5a14f103d.png",
+    "static/media/thyroid.svg": "/drtanvifrontend/static/media/thyroid.15611e231c48f6189fea24270d662580.svg",
+    "static/media/pcos.svg": "/drtanvifrontend/static/media/pcos.43abdd81af0bf671d26b4f74fd9461ab.svg",
+    "static/media/diabetes.svg": "/drtanvifrontend/static/media/diabetes.740c7815e7daecca2baf346937f83738.svg",
+    "index.html": "/drtanvifrontend/index.html",
+    "static/media/more.svg": "/drtanvifrontend/static/media/more.8d03d7d28cf34fa5287f36c2fe07631b.svg",
+    "static/media/logo.svg": "/drtanvifrontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/obesity.svg": "/drtanvifrontend/static/media/obesity.164463817dd0fb90c3433508111e6886.svg",
+    "static/media/playbtn.svg": "/drtanvifrontend/static/media/playbtn.1c2d345fe093bbcd8873c40d9181c786.svg",
+    "static/media/arrowright.svg": "/drtanvifrontend/static/media/arrowright.32dad69341663cbdf610a73369ed48b8.svg",
+    "main.50a7050a.css.map": "/drtanvifrontend/static/css/main.50a7050a.css.map",
+    "main.116707a8.js.map": "/drtanvifrontend/static/js/main.116707a8.js.map",
+    "787.3167efb2.chunk.js.map": "/drtanvifrontend/static/js/787.3167efb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50a7050a.css",
-    "static/js/main.e4751947.js"
+    "static/js/main.116707a8.js"
   ]
 }
