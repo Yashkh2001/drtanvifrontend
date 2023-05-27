@@ -11,64 +11,74 @@ const Obesity = () => {
           <div >
             <h1>Everything you need to know <br /> about Obesity</h1>
             <p>
-              Diabetes, also known as diabetes mellitus, 
-              is a group of metabolic disorders characterized by a high blood sugar level (hyperglycemia) over a prolonged period of time.[12][13] Symptoms often include frequent urination, increased thirst and increased appetite.[2] If left untreated, diabetes can cause many health complications.[2] Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death.[3] Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, damage to the nerves, damage to the eyes, and cognitive impairment.
-               characterized by a high blood sugar level (hyperglycemia) over a prolonged period of time.[12][13] Symptoms often include frequent urination, increased thirst and increased appetite.[2] If left untreated, diabetes can cause many health complications.[2] Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death.[3] Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, damage to the nerves, damage to the eyes, and cognitive impairment.
+              Obesity is a condition characterized by excess body fat, which increases the risk of various health problems. Some people say their body mass index (BMI) is 30 or higher. Obesity is a serious problem worldwide. Over 650 million adults and 340 million children and adolescents are considered obese.
             </p>
-            <button className='bookAppointment'>Book your Appointment</button>
+            <p style={{ marginBottom: '5px' }}>
+              Causes of Obesity:
+
+            </p>
+            <ul>
+              <li >Overeating: Eating more calories than your body burns leads to excess fat storage.</li>
+              <li >Lack of exercise: Lack of physical activity can lead to weight gain.</li>
+              <li >Genetics: Some people have a genetic predisposition to obesity.</li>
+              <li >Medical Conditions: Certain medical conditions, such as hypothyroidism and Cushing's Syndrome, can lead to weight gain.</li>
+            </ul>
+            <a href="https://wa.me/919987829999?text=Hello Dr.Tanvi I want to book an appointment." target="_blank">
+              <button className='bookAppointment'>Book your Appointment</button>
+            </a>
           </div>
-          <div>
-            <img style={{marginLeft:'200px'}} className='wid-400' src={diabetes}  alt="" />
+          <div className='ml50'>
+            <iframe width="600" height="400" autoplay src="https://www.youtube.com/embed/cuek_nbKccc?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
 
         <div className="videoSection videoSectionwhite m-t-50">
-                <h1 className='color-pink textcenter'>Popular Uploads</h1>
-                <div class="container1 m-b-30 ">
-                    <div class="row m-t-30 ">
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-                            <div class="card mb-4">
+          <h1 className='color-pink textcenter'>Popular Uploads</h1>
+          <div class="container1 m-b-30 ">
+            <div class="row m-t-30 ">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card mb-4">
 
-                                <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rgj7Xg-D80s?rel=0" allowfullscreen="true"></iframe> </div>
+                  <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bAqe9pO6f-0?rel=0" allowfullscreen="true"></iframe> </div>
 
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
 
-                            <div class="card mb-4">
+                <div class="card mb-4">
 
-                                <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pYJZvFJri3Y?rel=0" allowfullscreen="true"></iframe> </div>
+                  <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A1jXwEoLHkc?rel=0" allowfullscreen="true"></iframe> </div>
 
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-                            <div class="card mb-4">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card mb-4">
 
-                                <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wi9YTxKeR3Q?rel=0" allowfullscreen="true"></iframe> </div>
+                  <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ykBDn7GXNMA?rel=0" allowfullscreen="true"></iframe> </div>
 
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
-                            <div class="card mb-4">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                <div class="card mb-4">
 
-                                <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zNx1QmLcq5A?rel=0" allowfullscreen="true"></iframe> </div>
+                  <div class="img">  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/el6zZUciFKw?rel=0" allowfullscreen="true"></iframe> </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className='exploremore'>
+                </div>
+              </div>
+            </div>
+            {/* <div className='exploremore'>
                         <span>Explore More</span>
                    </div> */}
 
-                    {/* <MyOwlCarousel/> */}
+            {/* <MyOwlCarousel/> */}
 
-                </div>
+          </div>
 
 
-            </div>
+        </div>
       </div>
       <div className="m-t-20"></div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

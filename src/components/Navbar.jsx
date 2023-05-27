@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Dialog } from 'primereact/dialog';
 import { Link, withRouter, NavLink, useNavigate } from "react-router-dom";
 import ArrowRight from '../assets/arrowright.svg'
 import LogoIcon from '../assets/drtanvilogo.png'
+import LogoIconWhite from '../assets/drtanvilogowhite.png'
+import CrossIcon from '../assets/mobilecross.svg'
 import OtpInput from 'react-otp-input';
 import firebase from '../external/firebase'
 import axios from 'axios'
@@ -15,6 +17,7 @@ const Navbar = (props) => {
     const [final, setfinal] = useState('');
     const [error, setError] = useState({});
     const [sent, setSent] = useState(false);
+    const [nav, setshowNav] = useState(false);
     const [name, setName] = useState('');
 
     const configureCaptcha = () => {
@@ -30,6 +33,16 @@ const Navbar = (props) => {
         });
 
     }
+
+    useEffect(() => {
+        console.log(user)
+    }, [])
+
+    const handleClick = () => {
+        console.log('clicked')
+        setshowNav(!nav);
+    };
+
 
     const onSignInSubmit = (e) => {
         e.preventDefault()
@@ -109,8 +122,18 @@ const Navbar = (props) => {
 
     return (
         <>
+
+
+            {
+                nav &&
+                <>
+                    <div class="navMasker ng-star-inserted"></div>
+                    <img onClick={handleClick} src={CrossIcon} alt="" class="mobilecross ng-star-inserted"></img>
+                </>
+            }
+
             <div id="recaptcha-container"></div>
-            <div style={{ backgroundColor: props.bgcolor }} className='navbarSection'>
+            <div style={{ backgroundColor: props.bgcolor }} className='navbarSection desktopNav'>
                 <NavLink to="/" >
                     <div className='logo'>
                         <img className='logoIcon' src={LogoIcon} alt="" />
@@ -137,34 +160,84 @@ const Navbar = (props) => {
                         <span>More...</span>
                     </NavLink>
 
-                    <button onClick={() => { setDisplayBasic(true) }} className='pinkbtn'>
-                        <span>
-                            Book Now
-                        </span>
+                    <button className='pinkbtn'>
+
+                        <a href="https://wa.me/919987829999?text=Hello Dr.Tanvi I want to book an appointment." target="_blank">
+                            <span style={{ color: "#fff" }}>
+                                Book Now
+                            </span>
+                        </a>
                         <img src={ArrowRight} alt="" />
                     </button>
                 </div>
+            </div>
+
+            <div style={{ backgroundColor: props.bgcolor }} className='navbarSection mobileNav'>
+                <nav class="navbar">
+                    <NavLink to="/" >
+                        <div className='logo m-l-15'>
+                            <img className='logoIcon' src={LogoIcon} alt="" />
+                        </div>
+                    </NavLink>
+                    <div class="navbar-container">
+
+                        <button onClick={handleClick} class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div className={`nav-links ${nav ? "transformright" : "transformleft"}`}>
+
+                            <div className='logo1'>
+                                <NavLink to="/" >
+                                    <img className='logoIcon' src={LogoIconWhite} alt="" />
+                                </NavLink>
+                            </div>
+
+                            <div className='navlinkchild'>
+
+                                <NavLink to="/about" >
+                                    <span class="navbar-item">About</span>
+                                </NavLink>
+                                <NavLink to="/diabetes">
+                                    <span class="navbar-item">Diabetes</span>
+                                </NavLink>
+                                <NavLink to="/pcos">
+                                    <span class="navbar-item">PCOS</span>
+                                </NavLink>
+                                <NavLink to="/thyroid">
+                                    <span class="navbar-item">Thyroid</span>
+                                </NavLink>
+                                <NavLink to="/obesity">
+                                    <span class="navbar-item">Obesity</span>
+                                </NavLink>
+                                <NavLink to="/more">
+                                    <span class="navbar-item">More...</span>
+                                </NavLink>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
             <div id="recaptcha-container"></div>
             <div id="sign-in-button"></div>
 
             <Dialog header="Login" visible={displayBasic} style={{ width: '450px' }} onHide={() => { setDisplayBasic(false) }}  >
-                {!sent && 
-                <>
-                <div className='loginDialog'>
-                <input type="text" value={name} placeholder='Enter name' onChange={(e)=>{setName(e.target.value)}} />
-                   <input type="number" value={number} placeholder='Enter mobile number' onChange={(e)=>{setNumber(e.target.value)}} />
-                   {error.number &&
-                 <p className='f-12 color-red bot3'>Please enter a valid mobile number</p>
-            }
-   
-          
-                   <button onClick={onSignInSubmit}>Send Otp</button>
-               </div>
-               {/* <div className='registerText'>
+                {!sent &&
+                    <>
+                        <div className='loginDialog'>
+                            <input type="text" value={name} placeholder='Enter name' onChange={(e) => { setName(e.target.value) }} />
+                            <input type="number" value={number} placeholder='Enter mobile number' onChange={(e) => { setNumber(e.target.value) }} />
+                            {error.number &&
+                                <p className='f-12 color-red bot3'>Please enter a valid mobile number</p>
+                            }
+
+
+                            <button onClick={onSignInSubmit}>Send Otp</button>
+                        </div>
+                        {/* <div className='registerText'>
                 <p>New user? <span>Register</span></p>
                </div> */}
-                 </>
+                    </>
                 }
 
 
@@ -182,7 +255,7 @@ const Navbar = (props) => {
                                 <p className='f-12 color-red bot3 f-600'>Invalid Otp</p>
                             }
                         </div>
-                        <br/>
+                        <br />
                         <div className="bluebtn padclass">
                             <button className='otpconfirm' onClick={ValidateOtp}>Continue</button>
                         </div>

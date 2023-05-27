@@ -14,6 +14,10 @@ button {
     cursor: pointer;
 }
 
+.pointerclass {
+    cursor: pointer;
+}
+
 .headerSection {
     width: 100%;
     height: 600px;
@@ -25,6 +29,16 @@ button {
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.displaycenter {
+    display: flex;
+    justify-content: center;
+}
+
+.displayEnd {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .color-pink {
@@ -41,6 +55,10 @@ button {
 
 .m-t-10 {
     margin-top: 10px;
+}
+
+.m-l-15{
+    margin-left: 15px;
 }
 
 .m-t-20 {
@@ -173,7 +191,7 @@ button {
 }
 
 .tanvi-img {
-    width: 300px;
+    width: 330px;
     position: relative;
     z-index: 10;
 }
@@ -190,6 +208,17 @@ button {
 
         background: #FFDDED;
     }
+}
+
+.griddisplay {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    column-gap: 40px;
+}
+
+.griddisplay div {
+    width: 50%;
 }
 
 .random1 {
@@ -298,9 +327,46 @@ button {
     color: #fff !important;
 }
 
+.spaceClass .tanvi-img {
+    width: 183px;
+    position: relative;
+    right: 30px;
+}
+
+.mapouter {
+    width: 98% !important;
+}
+
+.mapouter .gmap_canvas {
+    width: 98% !important;
+}
+
+.mapouter .gmap_canvas iframe {
+    width: 98% !important;
+}
+
+
+.aligncenter {
+    display: flex;
+    align-items: center;
+}
+
 .spaceClass {
     display: flex;
     justify-content: space-between;
+}
+
+.spaceClass li {
+    list-style-type: none;
+    background-image: url('assets/trophy.jpg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    // background-size: contain;
+    background-position: left center;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .moreimg {
@@ -372,6 +438,11 @@ button {
 
 .m-b-60 {
     margin-bottom: 60px !important;
+}
+
+.footerdiv a{
+color: #fff !important;
+text-decoration: none !important;
 }
 
 .m-t-60 {
@@ -546,6 +617,14 @@ button {
 
 }
 
+// .spaceClass li{
+//     display: flex !important;
+// }
+
+.column20{
+    column-gap: 20px !important;
+}
+
 /*.card:hover .top-text {
     opacity: 0;
     display: none;
@@ -650,7 +729,7 @@ button {
     width: 35px;
     position: absolute;
     margin-left: 30px;
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 .f-17 {
@@ -665,12 +744,14 @@ button {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    padding-top: 30px;
+    height: 200px;
 
-    img {
-        height: 143px;
-        border-radius: 8px 8px 0px 0px;
-        object-fit: cover;
-    }
+    // img {
+    //     height: 143px;
+    //     border-radius: 8px 8px 0px 0px;
+    //     object-fit: cover;
+    // }
 
     padding-bottom: 15px;
 }
@@ -755,7 +836,7 @@ button {
     }
 }
 
-.footer{
+.footer {
     display: flex;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
@@ -765,50 +846,53 @@ button {
     padding-right: 5%;
 }
 
-.footer{
-    p{
+.footer {
+    p {
         color: #fff !important;
-         cursor: pointer;
-       
+        cursor: pointer;
+
     }
-    span{
+
+    span {
         margin-bottom: 20px !important;
     }
 
-    .f-16{
+    .f-16 {
         margin-bottom: 10px !important;
     }
-   
+
 }
-.footerdiv{
+
+.footerdiv {
     width: 250px !important;
 }
 
-.active{
+.active {
     color: #EA4C89 !important;
 }
 
-.diseaseColor{
-    h1{
+.diseaseColor {
+    h1 {
         font-family: 'Montserrat', sans-serif !important;
-        font-weight: 400 !important;
+        font-weight: 500 !important;
     }
 }
 
-.wid-400{
+.wid-400 {
     width: 370px !important;
 }
 
-.topgrid{
+.topgrid {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.videoSectionwhite{
+
+.videoSectionwhite {
     background: #fff !important;
     background-color: #fff !important;
 }
 
-.loginDialog{
+.loginDialog {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -816,15 +900,16 @@ button {
     row-gap: 20px;
 }
 
-.loginDialog{
-    input{
+.loginDialog {
+    input {
         width: 100% !important;
         padding: 7px !important;
         padding-left: 10px !important;
         border-radius: 3px !important;
         border: 0.5px solid rgb(216, 212, 212);
     }
-    button{
+
+    button {
         width: 100% !important;
         background: rgba(234, 76, 137, 0.8);
         border-radius: 6px;
@@ -836,15 +921,16 @@ button {
     }
 }
 
-.registerText{
-    p{
+.registerText {
+    p {
         font-size: 13px !important;
         margin-top: 5px;
         margin-bottom: 5px;
         text-align: center;
         cursor: pointer;
     }
-    span{
+
+    span {
         color: #EA4C89 !important;
     }
 }
@@ -856,39 +942,39 @@ button {
 
 .otpdiv {
     margin-top: 10px !important;
- 
-  }
-  
-  .otpdiv>div {
+
+}
+
+.otpdiv>div {
     display: flex;
     margin-top: 10px;
     justify-content: space-between !important;
     width: 100% !important;
     gap: 10px !important;
-  }
-  
-  .otpdiv>div input {
+}
+
+.otpdiv>div input {
     width: 100% !important;
     height: 50px !important;
     border-radius: 4px !important;
     border-color: #d6c7c7 !important;
-  }
+}
 
-  .color-red {
+.color-red {
     color: red !important;
-  }
-  
-  .bot3 {
+}
+
+.bot3 {
     position: relative;
     // bottom: 3px;
     text-align: left !important;
-  }
+}
 
-  .f-12{
+.f-12 {
     font-size: 12px !important;
-  }
+}
 
-  .otpconfirm{
+.otpconfirm {
     width: 100% !important;
     background: rgba(234, 76, 137, 0.8);
     border-radius: 6px;
@@ -899,7 +985,300 @@ button {
     border: none !important;
 }
 
-.bt5{
-position: relative;
-bottom: 5px !important;
+.bt5 {
+    position: relative;
+    bottom: 5px !important;
+}
+
+.pinkColor {
+    color: #EA4C89 !important;
+}
+
+.desktopNav {
+    display: flex;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+.tab-content{
+    padding: 30px;
+}
+
+.active{
+    small{
+        color: #000 !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .navlinkchild {
+        margin-top: 80px;
+        margin-top: 80px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+    }
+
+    .navbar-container {
+        max-width: 1200px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png') no-repeat center center;
+        background-size: contain;
+    }
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: block;
+    }
+
+    .navbar-item {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #fff !important;
+        border: 0.5px solid #fff;
+    }
+
+
+    .nav-links {
+        position: fixed;
+        left: 0px;
+        width: 65% !important;
+        background: #EA4C89;
+        color: #ffffff !important;
+        z-index: 100 !important;
+        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .transformleft {
+        transform: translateX(-100%);
+    }
+
+    .transformright {
+        transform: translateX(0%);
+    }
+
+    .navMasker {
+        position: fixed;
+        top: 0;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        background-color: #0009 !important;
+    }
+
+    .mobilecross {
+        position: fixed;
+        left: 70% !important;
+        top: 50px;
+        z-index: 100 !important;
+        width: 30px;
+    }
+
+    .hero h1 {
+        font-weight: 400 !important;
+        font-size: 35px !important;
+    }
+
+    .tanvi-img {
+        display: none !important;
+    }
+
+    .bookAppointment {
+        background: rgba(234, 76, 137, 0.8);
+        border-radius: 6px;
+        font-size: 16px !important;
+        font-family: "Montserrat", sans-serif !important;
+        width: 90% !important;
+        font-weight: 400;
+        padding: 20px !important;
+        border: none;
+        z-index: 10000 !important;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .random4 {
+        display: none;
+    }
+
+    .randomdots div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FFDDED;
+    }
+
+    .random4 {
+        position: absolute;
+        margin-left: 211px;
+        margin-top: 444px;
+    }
+
+    .spaceClass {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .videoSection {
+        height: max-content;
+    }
+
+    .carouselFlex {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .reviewSection {
+        padding-top: 0px;
+    }
+
+    .topgrid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .ml50 {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .ml50 iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .videoSection {
+        margin-top: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: flex-start;
+
+        background: linear-gradient(90deg, #FAEDF3 0%, rgb(247 247 247) 100%);
+        z-index: 1000;
+    }
+
+    .footer {
+        display: flex;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        background-color: rgba(234, 76, 137, 0.85);
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+    }
+
+    .griddisplay {
+        display: flex;
+        justify-content: space-between;
+        width: 99%;
+        flex-direction: column;
+        column-gap: 40px;
+    }
+
+    .griddisplay div {
+        width: 100%;
+    }
+
+    .tanvi-img1 {
+        display: block !important;
+        position: relative;
+        right: 0px !important;
+    }
+
+    .reverseclass {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+
+
+    }
+
+    .mtmobile {
+        margin-top: 30px !important;
+    }
+
+    .mtmobile1 {
+        margin-top: 70px !important;
+    }
+
+    .logo1{
+        display: flex;
+        justify-content: flex-start !important;
+        width: 100%;
+    }
+
+    .logo1 img{
+      
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
 }
