@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.fbc4c008.css",
-    "main.js": "./static/js/main.6a911cfd.js",
+    "main.js": "./static/js/main.6db44ecc.js",
     "static/js/787.3167efb2.chunk.js": "./static/js/787.3167efb2.chunk.js",
     "static/media/diabetes.jpg": "./static/media/diabetes.8f363a10c6d5fb1742f1.jpg",
     "static/media/drtanviround.png": "./static/media/drtanviround.6dd50397c2fbcf893ec8.png",
@@ -9,6 +9,7 @@
     "static/media/tanvimg5.jpeg": "./static/media/tanvimg5.c7ab46d9279dffbacb98.jpeg",
     "static/media/tanvimg10.jpeg": "./static/media/tanvimg10.51093a09e5c612847556.jpeg",
     "static/media/tanvimg21.jpeg": "./static/media/tanvimg21.61a5f72ad8e21d0882c7.jpeg",
+    "static/media/tanvimgmain.jpeg": "./static/media/tanvimgmain.f91f50d96591f81e4866.jpeg",
     "static/media/tanvimg23.jpeg": "./static/media/tanvimg23.a0bb2c015e7b6b47e3ab.jpeg",
     "static/media/tanvimg12.jpeg": "./static/media/tanvimg12.582306154a966da37bf5.jpeg",
     "static/media/tanvimg9.jpeg": "./static/media/tanvimg9.1506f6f85b9512cd30ff.jpeg",
@@ -42,11 +43,11 @@
     "static/media/arrowright.svg": "./static/media/arrowright.32dad69341663cbdf610a73369ed48b8.svg",
     "static/media/mobilecross.svg": "./static/media/mobilecross.cd0010b5e23ee3106a8007fdf0641ab9.svg",
     "main.fbc4c008.css.map": "./static/css/main.fbc4c008.css.map",
-    "main.6a911cfd.js.map": "./static/js/main.6a911cfd.js.map",
+    "main.6db44ecc.js.map": "./static/js/main.6db44ecc.js.map",
     "787.3167efb2.chunk.js.map": "./static/js/787.3167efb2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbc4c008.css",
-    "static/js/main.6a911cfd.js"
+    "static/js/main.6db44ecc.js"
   ]
 }
